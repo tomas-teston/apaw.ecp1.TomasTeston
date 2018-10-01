@@ -1,4 +1,4 @@
-package es.upm.miw.iwvg.forge.log;
+package es.upm.miw.apaw.ecp1.log;
 
 
 import org.junit.jupiter.api.Test;
