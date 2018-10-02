@@ -1,7 +1,7 @@
 package es.upm.miw.apaw.ecp1.junit;
 
 public class Nomina {
-    private Double salario;
+    private double salario;
     private boolean cobrada;
 
     public Nomina() {
@@ -21,5 +21,15 @@ public class Nomina {
     public boolean isCobrada() {
         return this.cobrada;
     }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+
+    public void setCobrada(boolean cobrada) {
+        this.cobrada = cobrada;
+    }
+
+
 
 }
