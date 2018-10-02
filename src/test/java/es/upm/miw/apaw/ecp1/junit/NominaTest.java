@@ -12,7 +12,7 @@ public class NominaTest {
 
     @BeforeEach
     void before() {
-        this.nomina = new Nomina(2.0, false);
+        this.nomina = new NominaBuilder().cobrada(false).salario(10.5).build();
     }
 
     @Test
