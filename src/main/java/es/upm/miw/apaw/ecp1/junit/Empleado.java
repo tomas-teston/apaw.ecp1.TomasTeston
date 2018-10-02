@@ -20,6 +20,11 @@ public class Empleado {
 
     }
 
+    public Empleado(int id) {
+        this();
+        this.id = id;
+    }
+
     public int getId() {
         return id;
     }
