@@ -3,7 +3,7 @@ package es.upm.miw.apaw.ecp1.junit;
 import java.util.HashMap;
 import java.util.Map;
 
-public final class EmpleadoReferencesFactory {
+public final class EmpleadoReferencesFactory extends Observable {
 
     private static EmpleadoReferencesFactory empleadoReferencesFactory = new EmpleadoReferencesFactory();
 
@@ -22,6 +22,7 @@ public final class EmpleadoReferencesFactory {
     }
 
     public Empleado setReference(Empleado empleado) {
+        this.notifyObservers();
         return references.put(empleado.getId(), empleado);
     }
 
