@@ -1,5 +1,8 @@
 package es.upm.miw.apaw.ecp1.junit;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class ObserverEmpleado implements Observer {
 
     private EmpleadoReferencesFactory empleadoReferencesFactory;
@@ -12,7 +15,7 @@ public class ObserverEmpleado implements Observer {
 
     @Override
     public void update() {
-        this.state = "añadido";
+        LogManager.getLogger(this.getClass()).debug("update");
     }
 
     public String getState() {
