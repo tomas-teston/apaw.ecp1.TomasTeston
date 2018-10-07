@@ -3,11 +3,11 @@ package es.upm.miw.apaw.ecp1.junit;
 import java.util.HashMap;
 import java.util.Map;
 
-public final class EmpleadoReferencesFactory {
+public final class EmpleadoReferencesFactory extends Observable {
 
     private static EmpleadoReferencesFactory empleadoReferencesFactory = new EmpleadoReferencesFactory();
 
-    private Map<Integer, Empleado> references;
+    private Map<String, Empleado> references;
 
     private EmpleadoReferencesFactory() {
         this.references = new HashMap<>();
@@ -17,11 +17,12 @@ public final class EmpleadoReferencesFactory {
         return empleadoReferencesFactory;
     }
 
-    public Empleado getReference(Integer id) {
+    public Empleado getReference(String id) {
         return references.get(id);
     }
 
     public Empleado setReference(Empleado empleado) {
+        this.notifyObservers();
         return references.put(empleado.getId(), empleado);
     }
 

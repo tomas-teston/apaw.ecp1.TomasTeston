@@ -4,34 +4,38 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Empleado {
-    private int id;
-    private Departamento departamento;
+    private String id;
     private String nombre;
     private int edad;
 
     private List<Nomina> nominas;
+    private Departamento departamento;
+    private Jefe jefe;
 
     public Empleado() {
-        this.id = 0;
-        this.departamento = null;
+        this.id = "";
         this.nombre = "";
         this.edad = 0;
         this.nominas = new ArrayList<>();
+        this.departamento = null;
+        this.jefe = null;
 
     }
 
-    public Empleado(int id) {
+    public Empleado(String id) {
         this();
         this.id = id;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
     public Departamento getDepartamento() {
         return departamento;
     }
+
+    public Jefe getJefe() { return this.jefe; }
 
     public String getNombre() {
         return nombre;
