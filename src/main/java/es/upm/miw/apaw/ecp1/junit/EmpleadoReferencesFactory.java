@@ -7,7 +7,7 @@ public final class EmpleadoReferencesFactory extends Observable {
 
     private static EmpleadoReferencesFactory empleadoReferencesFactory = new EmpleadoReferencesFactory();
 
-    private Map<Integer, Empleado> references;
+    private Map<String, Empleado> references;
 
     private EmpleadoReferencesFactory() {
         this.references = new HashMap<>();
@@ -17,7 +17,7 @@ public final class EmpleadoReferencesFactory extends Observable {
         return empleadoReferencesFactory;
     }
 
-    public Empleado getReference(Integer id) {
+    public Empleado getReference(String id) {
         return references.get(id);
     }
 
