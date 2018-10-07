@@ -20,8 +20,8 @@ public class EmpleadoTest {
 
     @BeforeEach
     void before() {
-        this.empleado = new Empleado(0);
-        this.empleado2 = new Empleado(1);
+        this.empleado = new Empleado("0");
+        this.empleado2 = new Empleado("1");
         EmpleadoReferencesFactory.getFactory().setReference(this.empleado);
         EmpleadoReferencesFactory.getFactory().setReference(this.empleado2);
         this.observerEmpleadoTest = new ObserverEmpleadoTest(EmpleadoReferencesFactory.getFactory());
@@ -39,7 +39,7 @@ public class EmpleadoTest {
 
     @Test
     void testId() {
-        assertEquals(0, this.empleado.getId());
+        assertEquals("0", this.empleado.getId());
     }
 
     @Test
@@ -65,7 +65,7 @@ public class EmpleadoTest {
 
     @Test
     void testEventAddNewReferenceEmpleado(){
-        this.empleadoEvento = new Empleado(2);
+        this.empleadoEvento = new Empleado("2");
         EmpleadoReferencesFactory.getFactory().setReference(this.empleadoEvento);
         assertTrue(this.observerEmpleadoTest.getState());
     }
