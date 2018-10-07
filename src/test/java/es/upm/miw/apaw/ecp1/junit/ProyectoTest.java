@@ -22,14 +22,14 @@ public class ProyectoTest {
 
     @Test
     void testId() {
-        assertEquals(0, proyecto.getId());
+        assertEquals("0", proyecto.getId());
     }
 
     @Test
     void testFecha() {
         assertNull(proyecto.getFecha());
     }
-    
+
     @Test
     void testStrategyProyectoA() {
         assertEquals("Proyecto para RRHH", this.proyectoContext.getDescripcion());
