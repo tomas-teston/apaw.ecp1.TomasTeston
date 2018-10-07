@@ -8,13 +8,15 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class JefeTest {
 
     private JefeComposite jefeComposite;
+    private JefeLeaf jefeLeaf;
     private Jefe jefe;
 
     @BeforeEach
     void before() {
         this.jefeComposite = new JefeComposite("composicion");
-        this.jefe = new Jefe("JefeRRHH", 1, "Ramon", "918551234");
-        this.jefeComposite.add(jefe);
+        this.jefe = new Jefe( 1, "Ramon", "918551234");
+        this.jefeLeaf = new JefeLeaf("JefeRRHH", this.jefe);
+        this.jefeComposite.add(jefeLeaf);
     }
 
     @Test
@@ -39,7 +41,7 @@ public class JefeTest {
 
     @Test
     void testLeafJefeView(){
-        assertEquals("0", this.jefe.view());
+        assertEquals("0", this.jefeLeaf.view());
     }
 
 
