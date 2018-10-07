@@ -5,18 +5,20 @@ import java.util.List;
 
 public class Empleado {
     private int id;
-    private Departamento departamento;
     private String nombre;
     private int edad;
 
     private List<Nomina> nominas;
+    private Departamento departamento;
+    private Jefe jefe;
 
     public Empleado() {
         this.id = 0;
-        this.departamento = null;
         this.nombre = "";
         this.edad = 0;
         this.nominas = new ArrayList<>();
+        this.departamento = null;
+        this.jefe = null;
 
     }
 
@@ -32,6 +34,8 @@ public class Empleado {
     public Departamento getDepartamento() {
         return departamento;
     }
+
+    public Jefe getJefe() { return this.jefe; }
 
     public String getNombre() {
         return nombre;
