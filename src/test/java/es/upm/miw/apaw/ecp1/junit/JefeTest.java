@@ -26,7 +26,7 @@ public class JefeTest {
 
     @Test
     void testId() {
-        assertEquals(0, jefe.getId());
+        assertEquals("0", jefe.getId());
     }
 
     @Test

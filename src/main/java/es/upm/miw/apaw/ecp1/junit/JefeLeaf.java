@@ -26,6 +26,6 @@ public class JefeLeaf extends JefeComponent {
     }
 
     @Override public String view() {
-        return Integer.toString(this.jefe.getId());
+        return this.jefe.getId();
     }
 }
