@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Empleado {
-    private int id;
+    private String id;
     private String nombre;
     private int edad;
 
@@ -13,7 +13,7 @@ public class Empleado {
     private Jefe jefe;
 
     public Empleado() {
-        this.id = 0;
+        this.id = "";
         this.nombre = "";
         this.edad = 0;
         this.nominas = new ArrayList<>();
@@ -22,12 +22,12 @@ public class Empleado {
 
     }
 
-    public Empleado(int id) {
+    public Empleado(String id) {
         this();
         this.id = id;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
