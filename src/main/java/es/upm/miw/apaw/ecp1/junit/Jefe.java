@@ -6,10 +6,10 @@ public class Jefe{
     private String nombre;
     private int telefono;
 
-    public Jefe(int id, String nombre, String telefono) {
-        this.id = "0";
+    public Jefe(String id, String nombre, int telefono) {
+        this.id = id;
         this.nombre = nombre;
-        this.telefono = 0;
+        this.telefono = telefono;
     }
 
     public String getId() {
