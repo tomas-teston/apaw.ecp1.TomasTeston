@@ -4,9 +4,9 @@ public class Jefe{
 
     private String id;
     private String nombre;
-    private int telefono;
+    private String telefono;
 
-    public Jefe(String id, String nombre, int telefono) {
+    public Jefe(String id, String nombre, String telefono) {
         this.id = id;
         this.nombre = nombre;
         this.telefono = telefono;
@@ -20,7 +20,7 @@ public class Jefe{
         return nombre;
     }
 
-    public int getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 }
