@@ -57,6 +57,6 @@ Se pide aplicar patrones de diseño a un proyecto creado bajo 4 entidades:
 
 ### Diagrama UML
 
-[![UML](https://github.com/tomas-teston/apaw.ecp1.TomasTeston/blob/master/src/main/resources/ModeloDominio.png)](https://github.com/tomas-teston/apaw.ecp1.TomasTeston/blob/master/src/main/resources/modeloDominio.png)
+[![UML](https://github.com/tomas-teston/apaw.ecp1.TomasTeston/blob/master/src/main/resources/modeloDominio.png)](https://github.com/tomas-teston/apaw.ecp1.TomasTeston/blob/master/src/main/resources/modeloDominio.png)
 
 
