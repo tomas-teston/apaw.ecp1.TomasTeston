@@ -14,7 +14,7 @@ public class JefeTest {
     @BeforeEach
     void before() {
         this.jefeComposite = new JefeComposite("composicion");
-        this.jefe = new Jefe( 1, "Ramon", "918551234");
+        this.jefe = new Jefe( "1", "Ramon", "918551234");
         this.jefeLeaf = new JefeLeaf("JefeRRHH", this.jefe);
         this.jefeComposite.add(jefeLeaf);
     }
@@ -26,12 +26,12 @@ public class JefeTest {
 
     @Test
     void testId() {
-        assertEquals("0", jefe.getId());
+        assertEquals("1", jefe.getId());
     }
 
     @Test
     void testTelefono() {
-        assertEquals(0, jefe.getTelefono());
+        assertEquals("918551234", jefe.getTelefono());
     }
 
     @Test
@@ -41,7 +41,7 @@ public class JefeTest {
 
     @Test
     void testLeafJefeView(){
-        assertEquals("0", this.jefeLeaf.view());
+        assertEquals("1", this.jefeLeaf.view());
     }
 
 
